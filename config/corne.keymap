@@ -63,10 +63,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB       &kp Q     &kp W     &kp F     &kp P           &kp B        &kp J    &kp L     &kp U     &kp Y     &kp SEMICOLON  &kp LEFT_ALT
-&kp LCTRL     &HML 6 A  &HML 1 R  &HML 2 S  &HML 6 T        &kp G        &kp M    &HMR 6 N  &HMR 2 E  &HMR 1 I  &kp O          &kp ESCAPE
-&kp LEFT_GUI  &kp Z     &kp X     &kp C     &kp D           &kp COMMA    &kp DOT  &kp H     &kp K     &kp V     &kp FSLH       &kp DELETE
-                                  &sl 1     &kp LEFT_SHIFT  &kp SPACE    &kp RET  &kp BSPC  &mo 2
+&kp TAB       &kp Q     &kp W     &kp F     &kp P           &kp B        &kp J    &kp L      &kp U     &kp Y     &kp SEMICOLON  &kp LEFT_ALT
+&kp LCTRL     &HML 6 A  &HML 1 R  &HML 2 S  &HML 9 T        &kp G        &kp M    &HMR 10 N  &HMR 2 E  &HMR 1 I  &kp O          &kp ESCAPE
+&kp LEFT_GUI  &kp Z     &kp X     &kp C     &kp D           &kp COMMA    &kp DOT  &kp H      &kp K     &kp V     &kp FSLH       &kp DELETE
+                                  &sl 1     &kp LEFT_SHIFT  &kp SPACE    &kp RET  &kp BSPC   &mo 2
             >;
         };
 
@@ -154,6 +154,26 @@
             bindings = <
 &kp TAB       &trans    &kp PAGE_DOWN  &kp UP     &kp PAGE_UP     &kp C_VOLUME_UP      &kp PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &kp BSPC
 &tog 3        &kp HOME  &kp LEFT       &kp DOWN   &kp RIGHT       &kp END              &kp MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
+&kp LEFT_GUI  &trans    &trans         &kp LC(C)  &kp LC(V)       &kp C_VOLUME_DOWN    &kp DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans
+                                       &trans     &kp LEFT_SHIFT  &kp SPACE            &kp RET    &kp BSPC         &trans
+            >;
+        };
+
+        HomeRowNUMPad {
+            display-name = "Lower";
+            bindings = <
+&kp TAB       &kp KP_DIVIDE  &kp ASTERISK  &kp PLUS   &kp PAGE_UP     &trans       &kp GREATER_THAN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &kp BSPC
+&trans        &kp EQUAL      &kp MINUS     &kp COMMA  &trans          &trans       &kp LESS_THAN     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp ESC
+&kp LEFT_GUI  &trans         &kp CARET     &kp LC(C)  &kp LC(V)       &trans       &kp DOT           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCLAMATION  &kp DELETE
+                                           &trans     &kp LEFT_SHIFT  &kp SPACE    &kp RET           &kp BSPC         &trans
+            >;
+        };
+
+        HomeRowArrows {
+            display-name = "Lower";
+            bindings = <
+&kp TAB       &trans    &kp PAGE_DOWN  &kp UP     &kp PAGE_UP     &kp C_VOLUME_UP      &kp PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &kp BSPC
+&tog 3        &kp HOME  &kp LEFT       &kp DOWN   &kp RIGHT       &kp END              &kp MINUS  &trans           &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
 &kp LEFT_GUI  &trans    &trans         &kp LC(C)  &kp LC(V)       &kp C_VOLUME_DOWN    &kp DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans
                                        &trans     &kp LEFT_SHIFT  &kp SPACE            &kp RET    &kp BSPC         &trans
             >;

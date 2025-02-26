@@ -35,6 +35,19 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <36 37 38 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
+
+        HMR2: HMR2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR2";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
+        };
     };
 
     combos {
@@ -63,10 +76,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB       &kp Q     &kp W     &kp F     &kp P           &kp B           &kp J           &kp L      &kp U     &kp Y     &kp SEMICOLON  &kp LEFT_ALT
-&kp LCTRL     &HML 6 A  &HML 1 R  &HML 2 S  &HML 9 T        &kp G           &kp M           &HMR 10 N  &HMR 2 E  &HMR 1 I  &kp O          &kp ESCAPE
-&kp LEFT_GUI  &kp Z     &kp X     &kp C     &kp D           &kp COMMA       &kp DOT         &kp H      &kp K     &kp V     &kp FSLH       &kp DELETE
-                                  &sl 1     &kp LEFT_SHIFT  &HMR 1 SPACE    &HMR 11 RETURN  &kp BSPC   &mo 2
+&kp TAB       &kp Q     &kp W     &kp F     &kp P           &kp B           &kp J           &kp L       &kp U       &kp Y  &kp SEMICOLON  &kp LEFT_ALT
+&kp LCTRL     &HML 6 A  &HML 1 R  &HML 2 S  &HML 9 T        &kp G           &kp M           &HMR2 10 N  &HMR2 11 E  &kp I  &kp O          &kp ESCAPE
+&kp LEFT_GUI  &kp Z     &kp X     &kp C     &kp D           &kp COMMA       &kp DOT         &kp H       &kp K       &kp V  &kp FSLH       &kp DELETE
+                                  &sl 1     &kp LEFT_SHIFT  &HMR 1 SPACE    &HMR 11 RETURN  &kp BSPC    &mo 2
             >;
         };
 

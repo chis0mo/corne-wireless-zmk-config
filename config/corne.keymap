@@ -148,7 +148,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
+                <&macro_tap_time 0>,
                 <&kp T &kp R &kp A &kp N &kp S &kp F &kp O &kp R &kp M>;
 
             label = "TRANSFORM";
@@ -158,7 +158,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
+                <&macro_tap_time 0>,
                 <&kp LS(T) &kp R &kp A &kp N &kp S &kp F &kp O &kp R &kp M>;
 
             label = "TRANSFORM";
@@ -167,7 +167,9 @@
         public: public {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp P &kp U &kp B &kp L &kp I &kp C>;
+            bindings =
+                <&macro_tap_time 0>,
+                <&kp P &kp U &kp B &kp L &kp I &kp C>;
 
             label = "PUBLIC";
         };
@@ -176,7 +178,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
+                <&macro_tap_time 0>,
                 <&kp P &kp R &kp I &kp V &kp A &kp T &kp E>;
 
             label = "PRIVATE";
@@ -185,7 +187,7 @@
         the: the {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp T &kp H &kp E>;
+            bindings = <&macro_tap_time 0>, <&kp T &kp H &kp E>;
 
             label = "THE";
         };
@@ -193,7 +195,7 @@
         this: this {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp T &kp H &kp I &kp S>;
+            bindings = <&macro_tap_time 0>, <&kp T &kp H &kp I &kp S>;
 
             label = "THIS";
         };
@@ -201,7 +203,7 @@
         for: for {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp F &kp O &kp R>;
+            bindings = <&macro_tap_time 0>, <&kp F &kp O &kp R>;
 
             label = "FOR";
         };
@@ -210,7 +212,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
+                <&macro_tap_time 0>,
                 <&kp F &kp O &kp R &kp E &kp A &kp C &kp H>;
 
             label = "FOREACH";
@@ -219,7 +221,7 @@
         while: while {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp W &kp H &kp I &kp L &kp E>;
+            bindings = <&macro_tap_time 0>, <&kp W &kp H &kp I &kp L &kp E>;
 
             label = "WHILE";
         };

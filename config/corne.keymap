@@ -75,6 +75,8 @@
             #binding-cells = <0>;
             bindings = <&none &kp G &kp A &kp M &kp E &kp LS(O) &kp B &kp J &kp E &kp C &kp T>;
             label = "GAMEOBJECT";
+            wait-ms = <(-1)>;
+            tap-ms = <(-1)>;
         };
     };
 

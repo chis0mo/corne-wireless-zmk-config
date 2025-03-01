@@ -62,6 +62,32 @@
             bindings = <&sl 8>;
             key-positions = <36 41>;
         };
+
+        gameObject {
+            bindings = <&gameObject>;
+            key-positions = <17 22>;
+        };
+
+        GameObject {
+            bindings = <&GameObject>;
+            key-positions = <17 37 22>;
+        };
+    };
+
+    macros {
+        gameObject: gameObject {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp A &kp M &kp E &kp LS(O) &kp B &kp J &kp E &kp C &kp T>;
+            label = "GAMEOBJECT";
+        };
+
+        GameObject: GameObject {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(G) &kp A &kp M &kp E &kp LS(O) &kp B &kp J &kp E &kp C &kp T>;
+            label = "GAMEOBJECT";
+        };
     };
 
     keymap {
@@ -77,7 +103,7 @@
             display-name = "Base";
             bindings = <
 &kp TAB       &kp Q     &kp W     &kp F     &kp P           &kp B           &kp J           &kp L       &kp U       &kp Y  &kp SEMICOLON  &kp LEFT_ALT
-&kp LCTRL     &HML 6 A  &HML 1 R  &HML 2 S  &HML 9 T        &kp G           &kp M           &HMR2 10 N  &HMR2 11 E  &kp I  &kp O          &kp ESCAPE
+&kp LCTRL     &HML 6 A  &HML 1 R  &HML 2 S  &HML 9 T        &kp G           &kp M           &HMR2 12 N  &HMR2 10 E  &kp I  &kp O          &kp ESCAPE
 &kp LEFT_GUI  &kp Z     &kp X     &kp C     &kp D           &kp COMMA       &kp DOT         &kp H       &kp K       &kp V  &kp FSLH       &kp DELETE
                                   &sl 1     &kp LEFT_SHIFT  &HMR 1 SPACE    &HMR 11 RETURN  &kp BSPC    &mo 2
             >;
@@ -185,9 +211,9 @@
         HomeRowArrows {
             display-name = "Lower";
             bindings = <
-&kp TAB       &trans    &kp PAGE_DOWN  &kp UP     &kp PAGE_UP     &kp C_VOLUME_UP      &kp PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL        &kp BSPC
-&tog 3        &kp HOME  &kp LEFT       &kp DOWN   &kp RIGHT       &kp END              &kp MINUS  &trans           &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &trans
-&kp LEFT_GUI  &trans    &trans         &kp LC(C)  &kp LC(V)       &kp C_VOLUME_DOWN    &kp DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans
+&kp TAB       &trans    &kp PAGE_DOWN  &kp UP     &kp PAGE_UP     &kp C_VOLUME_UP      &kp PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL  &kp BSPC
+&trans        &kp HOME  &kp LEFT       &kp DOWN   &kp RIGHT       &kp END              &kp MINUS  &trans           &trans           &trans           &trans     &trans
+&kp LEFT_GUI  &trans    &trans         &kp LC(C)  &kp LC(V)       &kp C_VOLUME_DOWN    &kp DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans
                                        &trans     &kp LEFT_SHIFT  &kp SPACE            &kp RET    &kp BSPC         &trans
             >;
         };
@@ -198,6 +224,16 @@
 &kp TAB    &kp CARET  &kp AMPERSAND  &kp LESS_THAN  &kp GREATER_THAN  &kp EXCL             &kp EQUAL   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT          &kp SEMI  &trans
 &kp LCTRL  &kp SQT    &kp UNDER      &kp COMMA      &kp DOT           &kp DOUBLE_QUOTES    &kp MINUS   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp BSLH  &kp GRAVE
 &tog 3     &kp SEMI   &kp COLON      &kp TILDE      &kp PERCENT       &kp AT               &kp DOLLAR  &kp PLUS               &kp MINUS        &kp STAR          &kp PIPE  &kp DELETE
+                                     &mo 1          &kp LEFT_SHIFT    &kp SPACE            &kp RET     &kp BACKSPACE          &trans
+            >;
+        };
+
+        HomeRowParenthesesFingers {
+            display-name = "Raise";
+            bindings = <
+&kp TAB    &kp CARET  &kp AMPERSAND  &kp LESS_THAN  &kp GREATER_THAN  &kp EXCL             &kp EQUAL   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp SEMI  &trans
+&kp LCTRL  &kp SQT    &kp UNDER      &kp COMMA      &kp DOT           &kp DOUBLE_QUOTES    &trans      &trans                 &trans           &trans    &trans    &kp GRAVE
+&tog 3     &kp SEMI   &kp COLON      &kp TILDE      &kp PERCENT       &kp AT               &kp DOLLAR  &kp PLUS               &kp MINUS        &kp STAR  &kp PIPE  &kp DELETE
                                      &mo 1          &kp LEFT_SHIFT    &kp SPACE            &kp RET     &kp BACKSPACE          &trans
             >;
         };

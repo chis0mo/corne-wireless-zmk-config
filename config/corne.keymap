@@ -62,6 +62,20 @@
             bindings = <&sl 8>;
             key-positions = <36 41>;
         };
+
+        gameObject {
+            bindings = <&gameObject>;
+            key-positions = <17 22>;
+        };
+    };
+
+    macros {
+        gameObject: gameObject {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp G &kp A &kp M &kp E &kp LS(O) &kp B &kp J &kp E &kp C &kp T>;
+            label = "GAMEOBJECT";
+        };
     };
 
     keymap {

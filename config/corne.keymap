@@ -64,22 +64,6 @@
         };
     };
 
-    macros {
-        gameObject: gameObject {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp G &kp A &kp M &kp E &kp LS(O) &kp B &kp J &kp E &kp C &kp T>;
-            label = "GAMEOBJECT";
-        };
-
-        GameObject: GameObject {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(G) &kp A &kp M &kp E &kp LS(O) &kp B &kp J &kp E &kp C &kp T>;
-            label = "GAMEOBJECT";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 

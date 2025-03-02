@@ -107,6 +107,11 @@
             bindings = <&private>;
             key-positions = <4 14 21>;
         };
+
+        GameObjectMaj {
+            bindings = <&GameObjectMaj>;
+            key-positions = <17 22 13 38>;
+        };
     };
 
     macros {

@@ -239,10 +239,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB       &kp Q     &kp W     &kp F     &kp P           &kp B           &kp J           &kp L       &kp U       &kp Y  &kp SEMICOLON  &kp LEFT_ALT
-&kp LCTRL     &HML 6 A  &HML 1 R  &HML 2 S  &HML 9 T        &kp G           &kp M           &HMR2 12 N  &HMR2 10 E  &kp I  &kp O          &kp ESCAPE
-&kp LEFT_GUI  &kp Z     &kp X     &kp C     &kp D           &kp COMMA       &kp DOT         &kp H       &kp K       &kp V  &kp FSLH       &kp DELETE
-                                  &sl 1     &kp LEFT_SHIFT  &HMR 1 SPACE    &HMR 11 RETURN  &kp BSPC    &mo 2
+&kp TAB       &kp Q  &kp W  &kp F      &kp P           &kp B           &kp J           &kp L       &kp U       &kp Y  &kp SEMICOLON  &kp LEFT_ALT
+&kp LCTRL     &kp A  &kp R  &HML 13 S  &HML 9 T        &kp G           &kp M           &HMR2 12 N  &HMR2 10 E  &kp I  &kp O          &kp ESCAPE
+&kp LEFT_GUI  &kp Z  &kp X  &kp C      &kp D           &kp COMMA       &kp DOT         &kp H       &kp K       &kp V  &kp FSLH       &kp DELETE
+                            &sl 6      &kp LEFT_SHIFT  &HMR 1 SPACE    &HMR 11 RETURN  &kp BSPC    &mo 2
             >;
         };
 
@@ -365,13 +365,23 @@
             >;
         };
 
-        HomeRowParenthesesFingers {
+        HomeRowParenthesesFingersRight {
             display-name = "Raise";
             bindings = <
 &kp TAB    &kp CARET  &kp AMPERSAND  &kp LESS_THAN  &kp GREATER_THAN  &kp EXCL             &kp EQUAL   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp SEMI  &trans
 &kp LCTRL  &kp SQT    &kp UNDER      &kp COMMA      &kp DOT           &kp DOUBLE_QUOTES    &trans      &trans                 &trans           &trans    &trans    &kp GRAVE
 &tog 3     &kp SEMI   &kp COLON      &kp TILDE      &kp PERCENT       &kp AT               &kp DOLLAR  &kp PLUS               &kp MINUS        &kp STAR  &kp PIPE  &kp DELETE
                                      &mo 1          &kp LEFT_SHIFT    &kp SPACE            &kp RET     &kp BACKSPACE          &trans
+            >;
+        };
+
+        HomeRowParenthesesFingersLeft {
+            display-name = "Raise";
+            bindings = <
+&kp TAB    &kp CARET  &kp AMPERSAND  &kp LESS_THAN  &kp GREATER_THAN  &kp EXCL     &kp EQUAL   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT          &kp SEMI  &trans
+&kp LCTRL  &trans     &trans         &trans         &trans            &trans       &kp MINUS   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp BSLH  &kp GRAVE
+&tog 3     &kp SEMI   &kp COLON      &kp TILDE      &kp PERCENT       &kp AT       &kp DOLLAR  &kp PLUS               &kp MINUS        &kp STAR          &kp PIPE  &kp DELETE
+                                     &mo 1          &kp LEFT_SHIFT    &kp SPACE    &kp RET     &kp BACKSPACE          &trans
             >;
         };
     };

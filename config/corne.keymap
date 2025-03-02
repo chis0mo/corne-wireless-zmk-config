@@ -110,7 +110,7 @@
 
         GameObjectMaj {
             bindings = <&GameObjectMaj>;
-            key-positions = <17 22 13 38>;
+            key-positions = <17 22 13 37>;
         };
     };
 

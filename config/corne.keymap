@@ -418,19 +418,19 @@
 
         LeftHandNumHomeRow {
             bindings = <
-&kp TAB           &trans  &trans  &trans  &trans          &trans       &kp EQUAL        &kp PLUS         &kp MINUS        &kp STAR         &kp FSLH         &trans
-&kp LEFT_CONTROL  &trans  &trans  &trans  &trans          &trans       &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp ESC
-&kp LGUI          &trans  &trans  &trans  &trans          &trans       &kp DOT          &kp DOT          &kp COMMA        &kp DOLLAR       &kp HASH         &kp DEL
-                                  &trans  &kp LEFT_SHIFT  &kp SPACE    &kp RET          &kp BSPC         &mo 2
+&kp TAB           &trans  &trans  &trans  &trans          &trans       &kp EQUAL        &kp PLUS              &kp MINUS       &kp STAR                           &kp FSLH              &trans
+&kp LEFT_CONTROL  &trans  &trans  &trans  &trans          &trans       &kp KP_NUMBER_6  &HMR2 12 KP_NUMBER_7  &HMR2 15 KP_N8  &HMR_Shift LEFT_SHIFT KP_NUMBER_9  &HMR2 10 KP_NUMBER_0  &kp ESC
+&kp LGUI          &trans  &trans  &trans  &trans          &trans       &kp DOT          &HMR2 15 PERIOD       &kp COMMA       &kp DOLLAR                         &kp HASH              &kp DEL
+                                  &trans  &kp LEFT_SHIFT  &kp SPACE    &kp RET          &kp BSPC              &mo 2
             >;
         };
 
         RightHandNumHomeRow {
             bindings = <
-&kp TAB           &kp FSLH         &kp STAR   &kp MINUS        &kp PLUS         &kp EQUAL            &trans   &trans    &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5      &trans   &trans    &trans  &trans  &trans  &kp ESC
-&kp LGUI          &kp END          &kp LEFT   &kp COMMA        &kp PERIOD       &kp C_VOLUME_DOWN    &trans   &trans    &trans  &trans  &trans  &kp DEL
-                                              &trans           &kp LEFT_SHIFT   &kp SPACE            &kp RET  &kp BSPC  &mo 2
+&kp TAB           &kp FSLH         &kp STAR                           &kp MINUS      &kp PLUS        &kp EQUAL            &trans   &trans    &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp KP_NUMBER_1  &HML_Shift LEFT_SHIFT KP_NUMBER_2  &HML 14 KP_N3  &HML 13 KP_N4   &kp KP_NUMBER_5      &trans   &trans    &trans  &trans  &trans  &kp ESC
+&kp LGUI          &kp END          &kp LEFT                           &kp COMMA      &HML 14 PERIOD  &kp C_VOLUME_DOWN    &trans   &trans    &trans  &trans  &trans  &kp DEL
+                                                                      &trans         &kp LEFT_SHIFT  &kp SPACE            &kp RET  &kp BSPC  &mo 2
             >;
         };
     };

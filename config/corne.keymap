@@ -29,7 +29,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-on-release;
@@ -42,7 +42,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-on-release;
@@ -55,7 +55,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-on-release;
@@ -68,7 +68,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-on-release;

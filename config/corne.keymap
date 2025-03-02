@@ -112,6 +112,11 @@
             bindings = <&GameObjectMaj>;
             key-positions = <17 22 13 37>;
         };
+
+        TransformMaj {
+            bindings = <&TransformMaj>;
+            key-positions = <16 14 19 15 37>;
+        };
     };
 
     macros {

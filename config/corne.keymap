@@ -70,7 +70,7 @@
 
         transform {
             bindings = <&transform>;
-            key-positions = <16 14 19 15>;
+            key-positions = <16 14 19>;
         };
 
         this {
@@ -115,7 +115,7 @@
 
         TransformMaj {
             bindings = <&TransformMaj>;
-            key-positions = <16 14 19 15 37>;
+            key-positions = <16 14 19 37>;
         };
     };
 

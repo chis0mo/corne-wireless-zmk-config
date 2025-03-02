@@ -68,19 +68,9 @@
             key-positions = <17 22 13>;
         };
 
-        GameObject {
-            bindings = <&GameObjectMaj>;
-            key-positions = <17 22 13 37>;
-        };
-
         transform {
             bindings = <&transform>;
             key-positions = <16 14 19 15>;
-        };
-
-        Transform {
-            bindings = <&TransformMaj>;
-            key-positions = <16 15 14 19 37>;
         };
 
         this {

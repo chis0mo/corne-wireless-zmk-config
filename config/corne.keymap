@@ -270,19 +270,19 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB       &kp Q  &kp W                    &kp F      &kp P      &kp B        &kp J          &kp L       &kp U       &kp Y                    &kp SEMICOLON  &kp LEFT_ALT
-&kp LCTRL     &kp A  &HML_Shift LEFT_SHIFT R  &HML 14 S  &HML 13 T  &kp G        &kp M          &HMR2 12 N  &HMR2 15 E  &HMR_Shift LEFT_SHIFT I  &HMR2 10 O     &kp ESCAPE
-&kp LEFT_GUI  &kp Z  &kp X                    &kp C      &HML 14 D  &kp COMMA    &kp DOT        &HMR2 15 H  &kp K       &kp V                    &kp FSLH       &kp DELETE
-                                              &sl 6      &trans     &kp SPACE    &HMR 1 RETURN  &kp BSPC    &mo 2
+&kp TAB       &kp Q  &kp W  &kp F                &kp P      &kp B        &kp J          &kp L       &kp U                    &kp Y  &kp SEMICOLON  &kp LEFT_ALT
+&kp LCTRL     &kp A  &kp R  &HML_Shift LSHIFT S  &HML 13 T  &kp G        &kp M          &HMR2 12 N  &HMR_Shift LEFT_SHIFT E  &kp I  &HMR2 10 O     &kp ESCAPE
+&kp LEFT_GUI  &kp Z  &kp X  &kp C                &HML 14 D  &kp COMMA    &kp DOT        &HMR2 15 H  &kp K                    &kp V  &kp FSLH       &kp DELETE
+                            &sl 6                &trans     &kp SPACE    &HMR 1 RETURN  &kp BSPC    &mo 2
             >;
         };
 
         layer_7 {
             bindings = <
-&kp TAB   &trans           &kp LC(C)  &kp UP           &kp LC(V)        &kp C_VOLUME_UP      &kp EQUAL        &kp PLUS         &kp MINUS        &kp STAR         &kp FSLH         &trans
-&kp HOME  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp ESC
-&kp LGUI  &kp END          &kp LEFT   &kp DOWN         &kp RIGHT        &kp C_VOLUME_DOWN    &kp DOT          &kp DOT          &kp COMMA        &kp DOLLAR       &kp HASH         &kp DEL
-                                      &trans           &kp LEFT_SHIFT   &kp SPACE            &kp RET          &kp BSPC         &mo 2
+&kp TAB   &trans           &kp SLASH  &kp EXCLAMATION  &kp EQUAL         &kp C_VOLUME_UP      &kp EQUAL        &kp PLUS         &kp MINUS        &kp STAR         &kp FSLH         &trans
+&kp HOME  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_NUMBER_3  &kp KP_NUMBER_4   &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp ESC
+&kp LGUI  &kp END          &kp LEFT   &kp LESS_THAN    &kp GREATER_THAN  &kp C_VOLUME_DOWN    &kp DOT          &kp DOT          &kp COMMA        &kp DOLLAR       &kp HASH         &kp DEL
+                                      &trans           &kp LEFT_SHIFT    &kp SPACE            &kp RET          &kp BSPC         &mo 2
             >;
         };
 
@@ -389,30 +389,30 @@
         HomeRowLayerParentheses {
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp CARET  &kp AMPERSAND  &kp LESS_THAN  &kp GREATER_THAN  &kp EXCL             &kp EQUAL   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT          &kp SEMI  &trans
-&kp LCTRL  &kp SQT    &kp UNDER      &kp COMMA      &kp DOT           &kp DOUBLE_QUOTES    &kp MINUS   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp BSLH  &kp GRAVE
-&tog 3     &kp SEMI   &kp COLON      &kp TILDE      &kp PERCENT       &kp AT               &kp DOLLAR  &kp PLUS               &kp MINUS        &kp STAR          &kp PIPE  &kp DELETE
-                                     &mo 1          &kp LEFT_SHIFT    &kp SPACE            &kp RET     &kp BACKSPACE          &trans
+&kp TAB    &kp CARET    &kp AMPERSAND  &kp LESS_THAN  &kp GREATER_THAN   &kp EXCL        &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT          &kp SEMI  &trans
+&kp LCTRL  &kp COLON    &kp SEMI       &kp COMMA      &kp DOT            &kp QUESTION    &kp MINUS  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp BSLH  &kp GRAVE
+&tog 3     &kp PERCENT  &kp UNDER      &kp SQT        &kp DOUBLE_QUOTES  &kp AT          &kp TILDE  &kp PLUS               &kp MINUS        &kp STAR          &kp PIPE  &kp DELETE
+                                       &mo 1          &kp LEFT_SHIFT     &kp SPACE       &kp RET    &kp BACKSPACE          &trans
             >;
         };
 
         HomeRowParenthesesFingersRight {
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp CARET  &kp AMPERSAND  &kp LESS_THAN  &kp GREATER_THAN  &kp EXCL             &trans   &trans         &trans  &trans  &trans  &trans
-&kp LCTRL  &kp SQT    &kp UNDER      &kp COMMA      &kp DOT           &kp DOUBLE_QUOTES    &trans   &trans         &trans  &trans  &trans  &kp GRAVE
-&tog 3     &kp SEMI   &kp COLON      &kp TILDE      &kp PERCENT       &kp AT               &trans   &trans         &trans  &trans  &trans  &kp DELETE
-                                     &mo 1          &kp LEFT_SHIFT    &kp SPACE            &kp RET  &kp BACKSPACE  &trans
+&kp TAB    &kp CARET    &kp AMPERSAND  &kp LESS_THAN     &kp GREATER_THAN   &kp EXCL        &trans   &trans         &trans  &trans  &trans  &trans
+&kp LCTRL  &kp COLON    &kp SEMI       &kp COMMA         &kp DOT            &kp QUESTION    &trans   &trans         &trans  &trans  &trans  &kp GRAVE
+&tog 3     &kp PERCENT  &kp UNDER      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp AT          &trans   &trans         &trans  &trans  &trans  &kp DELETE
+                                       &mo 1             &kp LEFT_SHIFT     &kp SPACE       &kp RET  &kp BACKSPACE  &trans
             >;
         };
 
         HomeRowParenthesesFingersLeft {
             display-name = "Raise";
             bindings = <
-&kp TAB    &trans  &trans  &trans  &trans          &trans       &kp EQUAL   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT          &kp SEMI  &trans
-&kp LCTRL  &trans  &trans  &trans  &trans          &trans       &kp MINUS   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp BSLH  &kp GRAVE
-&tog 3     &trans  &trans  &trans  &trans          &trans       &kp DOLLAR  &kp PLUS               &kp MINUS        &kp STAR          &kp PIPE  &kp DELETE
-                           &mo 1   &kp LEFT_SHIFT  &kp SPACE    &kp RET     &kp BACKSPACE          &trans
+&kp TAB       &trans  &trans  &trans  &trans          &trans       &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT          &kp SEMI  &trans
+&kp LCTRL     &trans  &trans  &trans  &trans          &trans       &kp MINUS  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp BSLH  &kp GRAVE
+&kp LEFT_WIN  &trans  &trans  &trans  &trans          &trans       &kp TILDE  &kp PLUS               &kp MINUS        &kp STAR          &kp PIPE  &kp DELETE
+                              &mo 1   &kp LEFT_SHIFT  &kp SPACE    &kp RET    &kp BACKSPACE          &trans
             >;
         };
 
@@ -429,7 +429,7 @@
             bindings = <
 &kp TAB           &kp FSLH         &kp STAR                           &kp MINUS      &kp PLUS        &kp EQUAL            &trans   &trans    &trans  &trans  &trans  &trans
 &kp LEFT_CONTROL  &kp KP_NUMBER_1  &HML_Shift LEFT_SHIFT KP_NUMBER_2  &HML 14 KP_N3  &HML 13 KP_N4   &kp KP_NUMBER_5      &trans   &trans    &trans  &trans  &trans  &kp ESC
-&kp LGUI          &kp END          &kp LEFT                           &kp COMMA      &HML 14 PERIOD  &kp C_VOLUME_DOWN    &trans   &trans    &trans  &trans  &trans  &kp DEL
+&kp LGUI          &kp END          &trans                             &kp COMMA      &HML 14 PERIOD  &kp C_VOLUME_DOWN    &trans   &trans    &trans  &trans  &trans  &kp DEL
                                                                       &trans         &kp LEFT_SHIFT  &kp SPACE            &kp RET  &kp BSPC  &mo 2
             >;
         };

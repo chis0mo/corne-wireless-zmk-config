@@ -179,16 +179,6 @@
             tap-ms = <0>;
         };
 
-        transform: transform {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap_time 0>,
-                <&kp T &kp R &kp A &kp N &kp S &kp F &kp O &kp R &kp M>;
-
-            label = "TRANSFORM";
-        };
-
         TransformMaj: TransformMaj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -259,6 +249,18 @@
             bindings = <&macro_tap_time 0>, <&kp W &kp H &kp I &kp L &kp E>;
 
             label = "WHILE";
+        };
+
+        transform: transform {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap_time 0>,
+                <&kp T &kp R &kp A &kp N &kp S &kp F &kp O &kp R &kp M>;
+
+            label = "TRANSFORM";
+            wait-ms = <0>;
+            tap-ms = <0>;
         };
     };
 

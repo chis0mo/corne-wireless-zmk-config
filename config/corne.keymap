@@ -262,6 +262,45 @@
             wait-ms = <0>;
             tap-ms = <0>;
         };
+
+        even: even {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 0>, <&kp E &kp V &kp E &kp N &kp SPACE>;
+
+            label = "EVEN";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        made: made {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 0>, <&kp M &kp A &kp D &kp E &kp SPACE>;
+
+            label = "MADE";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        then: then {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 0>, <&kp T &kp H &kp E &kp N &kp SPACE>;
+
+            label = "THEN";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        city: city {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap_time 0>;
+            label = "CITY";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
     };
 
     keymap {
